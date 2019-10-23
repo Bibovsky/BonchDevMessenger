@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".ui.activities.SignInActivity">
 
     <Button
         android:id="@+id/sign_up_button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Зарегистрироваться"
+        android:text="Зарегистрироваться"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,10 +21,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="84dp"
         android:text="Mobile\nDevelopment"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_sign_up_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,7 +57,7 @@
         android:id="@+id/sign_in_button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Войти"
+        android:text="Войти"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +68,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="306dp" />
+        app:layout_constraintGuide_begin="269dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
