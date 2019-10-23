@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.activities.MainAppActivity">
-            <intent-filter>
+            </activity>
+        <activity android:name=".ui.activities.SignUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".ui.activities.SignInActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
-        <activity android:name=".ui.activities.SignUpActivity" />
-        <activity android:name=".ui.activities.SignInActivity" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
