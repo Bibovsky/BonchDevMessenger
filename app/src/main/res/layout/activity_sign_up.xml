@@ -71,6 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/email_sign_up_et" />
 
     <Button
+        style="@style/button_style"
         android:id="@+id/complete_sign_up_button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
