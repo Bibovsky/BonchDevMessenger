@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
@@ -15,6 +15,8 @@
 
     <style name="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
         <item name="colorControlNormal">#ffaaaa</item>
         <item name="colorControlActivated">#ffdd88</item>
         <item name="colorControlHighlight">#ffdd88</item>
