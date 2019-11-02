@@ -1,9 +1,14 @@
 package bonch.dev.school.ui.models
-import java.text.DateFormat
+import android.os.Parcel
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 import java.util.*
 import java.text.*
 
-data class Message(val msgId:Int,val msgText:String,val sentDate:String,val isUser:Boolean){
+@Parcelize
+data class Message(val msgId:Int, val msgText: String?, val sentDate: String?, val isUser:Boolean):Parcelable {
+
+
     class MessageLab{
         val msgList:MutableList<Message>
         val formatDate = SimpleDateFormat("hh:mm:ss")
@@ -16,4 +21,6 @@ data class Message(val msgId:Int,val msgText:String,val sentDate:String,val isUs
             }
         }
     }
+
+
 }

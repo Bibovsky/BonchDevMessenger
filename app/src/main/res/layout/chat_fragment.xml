@@ -7,6 +7,8 @@
     android:orientation="vertical"
     android:layout_marginTop="?attr/actionBarSize">
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/message_recycler_view"
         android:layout_width="match_parent"
@@ -18,15 +20,24 @@
         app:layout_constraintTop_toTopOf="parent"
 
         app:reverseLayout="true"
-        app:stackFromEnd="true" />
+        app:stackFromEnd="true" >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
-        l
+        android:orientation="horizontal"
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/divider_chat"
+        android:layout_marginHorizontal="4dp"/>
+
+    <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        >
 
         <EditText
             android:id="@+id/message_et"

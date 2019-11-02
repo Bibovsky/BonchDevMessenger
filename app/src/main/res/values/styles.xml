@@ -26,6 +26,9 @@
     <style name="a" parent="android:Theme">
         <item name="android:buttonStyle">@style/button_style</item>
     </style>
+    <style name="divider" >
+        <item name="android:background">@drawable/divider_chat</item>
+    </style>
     <style name="button_style">
 
         <item name="android:background">@drawable/btn_style</item>
