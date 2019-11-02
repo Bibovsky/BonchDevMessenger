@@ -8,7 +8,7 @@
     android:layout_below="@+id/toolbar">
 
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
-    <FrameLayout
+    <LinearLayout
         android:layout_marginTop="?attr/actionBarSize"
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-    </FrameLayout>
+    </LinearLayout>
     <FrameLayout
         android:layout_marginTop="?attr/actionBarSize"
         android:id="@+id/fg"
